@@ -1,19 +1,26 @@
 import React from 'react';
+import { StyledActorCard } from './ActorsCardStyled';
 
-const ActorCard = ({ name, birthday, deathday, gender, country, image }) => {
+const ActorCard = ({ image, name, gender, country, birthday, deathday }) => {
   return (
-    <div>
-      <div>
+    <StyledActorCard>
+      <div className="img-wrapper">
         <img src={image} alt="actor" />
       </div>
-      <h1>{name}</h1>
-      <p>{gender ? `${gender}` : null}</p>
-      <p>{birthday ? `Born on ${birthday}` : null}</p>
+      <h1>
+        {name}
 
-      <p>{deathday ? `Died on ${deathday}` : null}</p>
-      <p>{country ? `Comes from ${country}` : null}</p>
-    </div>
+        {gender ? `(${gender})` : null}
+      </h1>
+      <p>{country ? `Comes from ${country}` : 'No country known'}</p>
+      {birthday ? (
+        <p>
+          Born
+          {birthday}
+        </p>
+      ) : null}
+      <p className="deathday">{deathday ? `Died ${deathday}` : 'Alive'}</p>
+    </StyledActorCard>
   );
 };
-
 export default ActorCard;
