@@ -1,16 +1,14 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
 const Details = ({ status, premiered, network }) => {
   return (
     <div>
       <p>
-        Status:
-        <span>{status}</span>
+        Status: <span>{status}</span>
       </p>
       <p>
-        Premiered
-        {premiered}
-        {network ? `on ${network.name}` : null}
+        Premiered {premiered} {network ? `on ${network.name}` : null}
       </p>
     </div>
   );

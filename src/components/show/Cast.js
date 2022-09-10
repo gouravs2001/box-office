@@ -1,4 +1,6 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
+
 import IMG_PLACEHOLDER from '../../images/not-found.png';
 
 const Cast = ({ cast }) => {
@@ -14,7 +16,6 @@ const Cast = ({ cast }) => {
           </div>
           <div>
             <span>
-              {/* eslint-disable-next-line react/jsx-one-expression-per-line */}
               {person.name} | {character.name} {voice ? '| Voice' : ''}
             </span>
           </div>
