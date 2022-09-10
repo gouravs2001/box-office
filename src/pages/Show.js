@@ -7,6 +7,7 @@ import ShowMainData from '../components/show/ShowMainData';
 import Cast from '../components/show/Cast';
 
 import { apiGet } from '../misc/config';
+import { InfoBlock, ShowPageWrapper } from './Show.styled';
 
 const Show = () => {
   const { id } = useParams();
@@ -62,7 +63,7 @@ const Show = () => {
       </div>
     );
   return (
-    <div>
+    <ShowPageWrapper>
       <ShowMainData
         name={show.name}
         rating={show.rating}
@@ -70,25 +71,25 @@ const Show = () => {
         tags={show.genres}
         image={show.image}
       />
-      <div>
+      <InfoBlock>
         <h2>Details</h2>
         <Details
           status={show.status}
           premiered={show.premiered}
           network={show.network}
         />
-      </div>
+      </InfoBlock>
 
-      <div>
+      <InfoBlock>
         <h2>Seasons</h2>
         <Seasons seasons={show._embedded.seasons} />
-      </div>
+      </InfoBlock>
 
-      <div>
+      <InfoBlock>
         <h2>Cast</h2>
         <Cast cast={show._embedded.cast} />
-      </div>
-    </div>
+      </InfoBlock>
+    </ShowPageWrapper>
   );
 };
 
