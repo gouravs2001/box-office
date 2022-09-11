@@ -1,9 +1,8 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
 import IMG_PLACEHOLDER from '../../images/not-found.png';
 import { Star } from '../styled';
-import { Headline, MainDataWrapper, TagList } from './ShowMainData.styled';
+import { MainDataWrapper, Headline, TagList } from './ShowMainData.styled';
 
 const ShowMainData = ({ name, rating, summary, tags, image }) => {
   return (
@@ -13,7 +12,7 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
         <Headline>
           <h1>{name}</h1>
           <div>
-            <Star />
+            <Star active />
             <span>{rating.average || 'N/A'}</span>
           </div>
         </Headline>
