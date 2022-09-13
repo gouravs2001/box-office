@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c27ecfd18b065827c0852ff69d70e83a",
+    "revision": "23cf5a4ae877a051ae0ffac6e5122053",
     "url": "/box-office/index.html"
   },
   {
-    "revision": "3683e3ec8924c1243fc3",
+    "revision": "a9e203b74409cf3193ee",
     "url": "/box-office/static/css/main.93052401.chunk.css"
   },
   {
-    "revision": "f73f2f2853c1410f3aaf",
-    "url": "/box-office/static/js/2.2b1a189b.chunk.js"
+    "revision": "2289d8ab3a0b8e0fbe06",
+    "url": "/box-office/static/js/2.71475feb.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/box-office/static/js/2.2b1a189b.chunk.js.LICENSE.txt"
+    "url": "/box-office/static/js/2.71475feb.chunk.js.LICENSE.txt"
   },
   {
     "revision": "ed92057e0c6d406a1335",
     "url": "/box-office/static/js/3.90d9a6d0.chunk.js"
   },
   {
-    "revision": "3683e3ec8924c1243fc3",
-    "url": "/box-office/static/js/main.f59f9255.chunk.js"
+    "revision": "a9e203b74409cf3193ee",
+    "url": "/box-office/static/js/main.119081c4.chunk.js"
   },
   {
     "revision": "b4501d0f99ed0b4d2af8",
